@@ -1,0 +1,62 @@
+<!--
+File: update.ejs
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 17-Jun-2021
+-->
+
+<%- include ../components/header.ejs %>
+
+    <%- include ../components/main_nav.ejs %>
+
+
+        <!--Content for the Update page-->
+        <div class="container">
+            <div class="custom_div">
+
+                    <div class="jumbotron">
+                         <h1>
+                        <%=title%>
+                    </h1>
+                    </div>
+
+            <div class="row">
+                <div class="offset-md-2 col-md-8">
+
+                    <form class="form" method="POST">
+                        <div class="form-group">
+                            <label for="nameTextField">Name: </label><input id="nameTextField" placeholder="Name" name="name" type="text" class="form-control" 
+                            value="<%= contact.name%>"
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numberField">Contact Number: </label><input id="numberField" placeholder="+1-000-000" name="number" type="tel" class="form-control" 
+                            value="<%= contact.number%>">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailTextField">Email: </label><input id="emailTextField" placeholder="Email address" name="email" type="text" class="form-control" value="<%= contact.email%>">
+                        </div>
+
+                        <button class="btn btn-primary">
+                        <i class="fas fa-edit">Submit</i>
+                        </button>
+
+                        <a href="/contact-list" class="btn btn-warning">
+                        <i class="fas fa-undo">Cancel</i>
+                        </a>
+
+                        <a href="/contact-list/delete/<%=contact._id %>"class="btn btn-danger" btn-sm>
+                        <i class="fas fa-trash-alt"></i>Delete</a>
+                         
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include ../components/bottom_nav.ejs %>
+
+            <%- include ../components/footer.ejs %>

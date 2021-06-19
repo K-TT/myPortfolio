@@ -1,0 +1,78 @@
+<!--
+File: main_nav.ejs
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 2-Jun-2021
+-->
+
+
+<!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <img id="logo" src="Assets/images/Logo.png">
+   <a class="navbar-brand" href="/">Kateryna Khomenko</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home"){ %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+        </li>
+
+        <% if (title == "About me") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About me</a>
+        </li>
+
+        <% if (title == "My Projects") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/projects"><i class="fas fa-suitcase"></i> Projects </a>
+        </li>
+
+        <% if (title == "Services") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
+        </li>
+
+        <% if (title == "Contact me") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact me</a>
+        </li>
+
+        <% if (title == "Business Contacts") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact-list"><i class="fas fa-list-alt"></i> Business Contacts</a>
+        </li>
+
+        <% if(typeof displayName =='string' && displayName){%>
+        <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome,  <%=displayName%></li> 
+       <li class="nav-item"><a href="/logout" class="nav-link">
+       <i class="fas fa-lg fa-sign-out-alt"></i>Logout</a></li>
+        <%}else{%>
+        <li class="nav-item"><a href="/login" class="nav-link">
+        <i class="fas fa-lg fa-sign-in-alt"></i>Login</a></li>
+        <%}%>
+
+    </div>
+  </nav>

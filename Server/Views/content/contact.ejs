@@ -1,0 +1,58 @@
+<!--
+File: contact.ejs
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 2-Jun-2021
+-->
+
+
+<div class="jumbotron">
+      <h1 class="display-5"><%= title %></h1>
+      
+    </div>
+
+<!--Personal info field-->
+    <div id="contact_info">
+
+    <h5>My Contact information</h5>
+    <p>Mob.tel.: +164-7783-7384 </p>
+    <p>Email: katerinakhomenko93@gmail.com</p>
+    <p>LinkedIn: www.linkedin.com/in/katerynakhomenko</p>
+
+    </div>
+
+<!--Contact me form-->
+    <form id="contact_form">
+    <div class="form-group">
+
+    <div class="row">
+    <div class="col">
+      <input id="firstName" type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input id="lastName" type="text" class="form-control" placeholder="Last name">
+    </div>
+    </div>
+
+    <label for="exampleFormControlInput1">Email address</label>
+    <input id="senderEmail" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+
+    <label for="exampleFormControlFile1">Subject</label>
+    <input id="subject" type="text" class="form-control" id="subject">
+
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control" id="massage_text" rows="10"></textarea>
+
+<!--when the "Contact me" form is submitted a user receives a message confirming the submission,
+ and then gets redirected to the Home page-->
+    <button onclick="callAlert()" id="submitBT" type="button" >Send</button>
+    <script>
+    function callAlert(){
+       
+       window.alert("Thank you for getting in touch with me.\nI will respond to your message as soon as possible.");
+     window.location.href = "/home";
+    }
+    </script>
+  </div>
+</form>

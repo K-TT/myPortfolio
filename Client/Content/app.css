@@ -1,0 +1,147 @@
+/*
+File: app.css
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 17-Jun-2021
+*/
+
+
+/*general settings*/
+
+.jumbotron {
+    background-color: rgba(233, 229, 229, 0.63);
+    height: 100px;
+}
+
+.custom_div {
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 50px;
+    border-radius: 7px 7px 7px;
+    background-color: rgba(168, 164, 164, 0.226);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #337531;
+    border-color: #2f692d;
+}
+
+.btn-primary,
+.btn-warning,
+.btn-danger {
+    margin: 6px;
+}
+
+.table {
+    background-color: rgba(170, 159, 159, 0.651);
+    font-weight: 400;
+    font-size: larger;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    color: aliceblue;
+}
+
+h1 {
+    color: rgb(29, 28, 28)
+}
+
+#logo {
+    height: 50px;
+    margin: 4px;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+
+/*Projects page*/
+
+.logo_projects {
+    height: 200px;
+    margin: 4px;
+}
+
+.project_name {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*Services page*/
+
+.logo_services {
+    height: 100px;
+    margin: 15px;
+}
+
+#skills {
+    width: 100%;
+}
+
+
+/*About me page*/
+
+#myPhoto {
+    height: 300px;
+    border: 6px dashed grey;
+    border-radius: 10px 10px 10px;
+    float: right;
+}
+
+
+/*Contact me page*/
+
+#contact_info {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px 7px 7px;
+    background-color: rgba(109, 107, 107, 0.384);
+}
+
+#contact_info h5 {
+    color: black;
+    font-weight: 700;
+}
+
+button {
+    color: rgb(46, 47, 48);
+    border-radius: 7px 7px 7px;
+    border: 3px solid grey;
+    background-color: rgb(65, 199, 161);
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+}
+
+form {
+    padding: 16px;
+    margin: 50px;
+    background-color: rgba(168, 164, 164, 0.226);
+    border-radius: 7px 7px 7px;
+}
+
+input,
+label {
+    margin: 4px;
+}

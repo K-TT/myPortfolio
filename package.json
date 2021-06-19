@@ -1,0 +1,56 @@
+{
+    "name": "comp229-s2021-week3",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./server.js"
+    },
+    "engines": {
+        "node": "^12.18.3",
+        "npm": "^6.00.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "bootstrap": "^5.0.1",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "~1.4.4",
+        "cors": "^2.8.5",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "express-session": "^1.17.2",
+        "http-errors": "~1.6.3",
+        "jquery": "^3.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.12.14",
+        "morgan": "~1.9.1",
+        "passport": "^0.4.1",
+        "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^6.1.0",
+        "popper.js": "^1.16.1"
+    },
+    "description": "demo app for COMP229 week 3",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/K-TT/COMP229-Week3.git"
+    },
+    "author": "Kateryna Khomenko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/K-TT/COMP229-Week3/issues"
+    },
+    "homepage": "https://github.com/K-TT/COMP229-Week3#readme",
+    "devDependencies": {
+        "@types/connect-flash": "^0.0.36",
+        "@types/cors": "^2.8.10",
+        "@types/express-session": "^1.17.3",
+        "@types/jsonwebtoken": "^8.5.2",
+        "@types/mongoose": "^5.11.97",
+        "@types/passport": "^1.0.6",
+        "@types/passport-jwt": "^3.0.5",
+        "@types/passport-local": "^1.0.33",
+        "@types/passport-local-mongoose": "^4.0.14"
+    }
+}

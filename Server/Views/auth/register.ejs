@@ -1,0 +1,71 @@
+<!--
+File: registration.ejs
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 17-Jun-2021
+-->
+
+
+<%- include ../components/header.ejs %>
+
+<%- include ../components/main_nav.ejs %>
+  
+
+   <main class="container">
+       <div class="custom_div">
+
+            <!-- Message Area -->
+            <% if(messages.length >0){%>
+                <div class="alert alert-danger" >
+                    <%=messages%>
+                </div>
+                <% } %>
+
+            <div class="jumbotron">
+                <h1 class="display-5">Please Register</h1>
+            </div>
+
+                    <div class="row">
+                            
+                             <div class="offset-md-2 col-md-8">
+                            <form method="POST" autocomplete="off">
+                                <fieldset class="form-group">
+                                    <label for="username">Username: </label>
+                                    <input type="text" class="form-control" name="username" placeholder="Enter username" id="username" required autofocus>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <label for="password">Password: </label>
+                                    <input type="password" class="form-control" name="password" placeholder="Enter password" id="password" required>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input type="text" class="form-control" name="email" placeholder="Enter email" id="email" required>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <label for="displayName">Display Name: </label>
+                                    <input type="text" class="form-control" name="displayName" placeholder="Enter Display Name" id="displayName" required>
+                                </fieldset>
+
+                                <fieldset class="form-group text-right">
+                                    <input type="submit" class="btn btn-success" value="Register">
+                                   <a href="/">
+                                         <input type="button" class="btn btn-warning" value="Cancel">
+                                    </a>
+                                </fieldset>
+
+                            </form>
+                        </div>
+                    </div>
+
+            </div>
+        </main>
+  
+<%- include ../components/bottom_nav.ejs %>  
+
+<%- include ../components/footer.ejs %>
+  
+
+

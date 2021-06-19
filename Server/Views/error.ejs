@@ -1,0 +1,22 @@
+<!--
+File: error.ejs
+Name: Kateryna Khomenko
+ID: 301091332
+Date: 2-Jun-2021
+-->
+
+
+<%- include components/header.ejs %>
+
+<%- include components/main_nav.ejs %>
+
+<div class="container">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+</div>
+
+
+<%- include components/bottom_nav.ejs %>
+
+<%- include components/footer.ejs %>
